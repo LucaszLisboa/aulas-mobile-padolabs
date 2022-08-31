@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Digital Locking Pado</string>
+    <string name="o_mundo_cada_vez_mais_digital">O MUNDO\nCADA VEZ MAIS\n<b>DIGITAL</b></string>
+    <string name="novidades"><b>Novidades</b></string>
+    <string name="app_name" />
+    <string name="produtos">Produtos</string>
+    <string name="fde_600w">FDE-600W</string>
+    <string name="fde_600w_descricao">FECHADURA DEIGITAL DE EMBUTIR A PROVA D\'ÁGUA E COM CONETIVIDADE</string>
+    <string name="fde_600w_preco">R$1.500,00</string>
 </resources>
