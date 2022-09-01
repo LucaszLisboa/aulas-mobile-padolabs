@@ -5,8 +5,10 @@
       <map>
         <entry key="app/src/main/res/drawable/bg_input.xml" value="0.241" />
         <entry key="app/src/main/res/font/open_sans.xml" value="0.34974358974358977" />
-        <entry key="app/src/main/res/layout/activity_fde600_wpage.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.28837209302325584" />
+        <entry key="app/src/main/res/font/roboto_thin.xml" value="0.28788518362178134" />
+        <entry key="app/src/main/res/layout/activity_fde300_wpage.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_fde600_wpage.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/menu/toolbar.xml" value="0.2659256092347157" />
       </map>
     </option>

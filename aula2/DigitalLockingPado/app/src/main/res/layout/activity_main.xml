@@ -166,8 +166,6 @@
                             tools:targetApi="p">
                         </TextView>
 
-
-
                     </LinearLayout>
 
                 </LinearLayout>
@@ -194,7 +192,7 @@
                         android:layout_gravity="center"
                         android:layout_weight="0.25"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/fde600w">
+                        android:src="@drawable/fde300w">
                     </ImageView>
 
                     <LinearLayout
@@ -207,7 +205,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="5dp"
-                            android:text="@string/fde_600w"
+                            android:text="@string/fde_300w"
                             android:textColor="#444444"
                             android:textSize="16sp"
                             android:textStyle="bold"
@@ -218,7 +216,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="0dp"
                             android:layout_weight="1"
-                            android:text="@string/fde_600w_descricao"
+                            android:text="@string/fde_300w_descricao"
                             android:textColor="#444444"
                             android:textSize="12sp"
                             tools:targetApi="p">
@@ -227,14 +225,12 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/fde_600w_preco"
+                            android:text="@string/fde_300w_preco"
                             android:textColor="#444444"
                             android:textSize="12sp"
                             android:textStyle="bold"
                             tools:targetApi="p">
                         </TextView>
-
-
 
                     </LinearLayout>
 

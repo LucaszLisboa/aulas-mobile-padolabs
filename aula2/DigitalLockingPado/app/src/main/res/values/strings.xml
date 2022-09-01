@@ -6,4 +6,15 @@
     <string name="fde_600w">FDE-600W</string>
     <string name="fde_600w_descricao">FECHADURA DEIGITAL DE EMBUTIR A PROVA D\'ÁGUA E COM CONETIVIDADE</string>
     <string name="fde_600w_preco">R$1.500,00</string>
+    <string name="fde_300w">FDE-300W</string>
+    <string name="fde_300w_descricao">FECHADURA DIGITAL DE EMBUTIR A PROVA D\'ÁGUA E CONECTIVIDADE</string>
+    <string name="fde_300w_preco">R$1.500,00</string>
+    <string name="acesso_remoto_via_wi_fi">Acesso remoto via wi-fi</string>
+    <string name="teclado_n_merico">Teclado númerico</string>
+    <string name="compat_vel_com_alexa">Compatível com alexa</string>
+    <string name="btn_comprar">Comprar agora</string>
+    <string name="fechadura_digital_de_embutir">FECHADURA DIGITAL DE EMBUTIR</string>
+    <string name="resistente_agua">Resistente à água</string>
+    <string name="leitor_bio">Leitor biométrico</string>
+    <string name="acesso_por_cart">Acesso por cartão</string>
 </resources>

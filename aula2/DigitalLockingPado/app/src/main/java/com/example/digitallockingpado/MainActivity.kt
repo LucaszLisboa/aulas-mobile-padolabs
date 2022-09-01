@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         val mainToolBar = findViewById<MaterialToolbar>(R.id.mainToolBar)
         val fde600wCard = findViewById<CardView>(R.id.fde600wCard)
+        val fde300wCard = findViewById<CardView>(R.id.fde300wCard)
 
         mainToolBar.setNavigationOnClickListener(){
             Toast.makeText(this, "Hamburguer pressionado!!", Toast.LENGTH_SHORT).show()
@@ -44,6 +45,10 @@ class MainActivity : AppCompatActivity() {
 
         fde600wCard.setOnClickListener(){
             startActivity(Intent(this, Fde600WPage::class.java))
+        }
+
+        fde300wCard.setOnClickListener(){
+            startActivity(Intent(this, Fde300WPage::class.java))
         }
     }
 }
