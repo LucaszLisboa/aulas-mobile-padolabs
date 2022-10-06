@@ -1,0 +1,56 @@
+.header{
+    background-color: #19133E;
+    display: flex;
+    justify-content: center;
+    padding-top: 15vw;
+}
+
+.container{
+    padding-top: 10vh;
+    width: 100%;
+    height: 100%;
+    background-color: #19133E;
+}
+
+.input{
+    color:white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    border-radius: 5px;
+    height: 7vh;
+    background-color: #2C2656;
+}
+
+.login{
+    font-weight: bold;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.btn{
+    height: 7vh;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.text-register{
+    margin-top: 8vh;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
