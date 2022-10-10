@@ -1,0 +1,60 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 90px;
+    color: #fff;
+    background-color: #222222;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px;
+
+    ion-icon{
+        padding-left: 30px;
+        font-size: 24px;
+    }
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #222222;
+    padding: 25px;
+    font-size: 17px;
+}
+
+.cabecalho{
+    padding-left: 25px;
+}
+
+.perfil{
+    font-size: 24px;
+}
+
+.config-perfil{
+    color: #989898;
+}
+
+.email{
+    color: #3D3D3D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dados{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .sub-info{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        gap: 10px;
+    }
+}

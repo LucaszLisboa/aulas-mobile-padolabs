@@ -4,6 +4,7 @@
 
 <ion-content>
   <div class="container">
+    
 
     <div class="title">
       <p>SELECIONE UMA REGIÃO</p>
@@ -37,21 +38,22 @@
   </div>
 </ion-content>
 
-<ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="schedule" class="tab">
-      <ion-icon name="calendar"></ion-icon>
-
-    </ion-tab-button>
-
-    <ion-tab-button tab="map" class="tab">
-      <ion-icon name="map"></ion-icon>
-
-    </ion-tab-button>
-
-    <ion-tab-button tab="about" class="tab">
-      <ion-icon name="person-circle"></ion-icon>
-
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+  
+      <ion-tab-button class="ico" tab="schedule" class="tab">
+        <ion-icon class="icon" name="home-outline" color="dark"></ion-icon>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="map" class="tab">
+        <ion-icon class="icon" name="star-outline" color="dark"></ion-icon>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="about" class="tab">
+        <ion-icon class="icon" name="person-outline" color="dark"></ion-icon>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>
