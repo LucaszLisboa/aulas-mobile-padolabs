@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,25 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-  constructor(private router: Router) { }
-
-  goToPage(){
-    this.router.navigate(["/register"]);
-  }
+  constructor(private router: Router, private UserService: UserService) { }
+  public userEmail: string = undefined;
+  public userPassword: string = undefined;
 
   ngOnInit() {
   }
 
+  onSubmit() {
+    const data = {
+      userEmail: this.userEmail,
+      userPassword: this.userPassword
+    }
+
+    this.UserService.userLogin(data).subscribe(data =>{
+      this.router.navigate(['/regiao'])
+    })
+  }
+
+  goToPage(){
+    this.router.navigate(["/register"]);
+  }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-regiao',
   templateUrl: './regiao.page.html',
@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegiaoPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  goToPage(){
+    this.router.navigate(["/perfil"])
+  }
 
   ngOnInit() {
   }

@@ -8,15 +8,15 @@
 
     <div class="login">
       <div class="input">
-        <ion-input placeholder="LOGIN"></ion-input>
+        <ion-input [(ngModel)]="userEmail" placeholder="LOGIN"></ion-input>
       </div>
   
       <div class="input">
-        <ion-input placeholder="SENHA"></ion-input>
+        <ion-input [(ngModel)]="userPassword" type="password" placeholder="SENHA"></ion-input>
       </div>
     </div>
 
-    <ion-button class="btn" expand="block">ENTRAR</ion-button>
+    <ion-button (click)="onSubmit()" class="btn" expand="block">ENTRAR</ion-button>
 
 
     <div class="text-register">

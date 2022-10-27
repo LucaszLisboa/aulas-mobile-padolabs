@@ -14,7 +14,7 @@ export class CidadesService {
   constructor(private http: HttpClient) { }
 
   BuscarCidades(): Observable<object> {
-    const dataUrl = 'https://api.jsonbin.io/v3/b/633dd6fa65b57a31e68c063a';
+    const dataUrl = 'http://172.16.107.82:8080/regions/all';
     return this.http.get(dataUrl, this.httpOptions);
   }
 }

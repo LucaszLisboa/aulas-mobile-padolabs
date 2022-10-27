@@ -1,5 +1,5 @@
 <ion-header class="header">
-  <ion-icon name="arrow-back-outline"></ion-icon>
+  <ion-icon name="arrow-back-outline" (click)="goToPage()"></ion-icon>
   <p>MEU PERFIL</p>
 </ion-header>
 
@@ -53,7 +53,7 @@
           <ion-icon name="help-circle-outline"></ion-icon>
           <p>Ajuda</p>
         </div>
-        <ion-icon class="arrow" name="chevron-forward-outline" color="secondary"></ion-icon>
+        <ion-icon class="arrow" name="chevron-forward-outline" color="secondary" (click)="goToPageFaq()"></ion-icon>
       </div>
 
       <div class="config">

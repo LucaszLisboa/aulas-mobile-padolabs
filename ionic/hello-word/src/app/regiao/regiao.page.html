@@ -38,7 +38,7 @@
   </div>
 </ion-content>
 
-<ion-toolbar>
+<ion-toolbar class="toolbar">
   <ion-tabs>
     <ion-tab-bar slot="bottom">
   
@@ -50,7 +50,7 @@
         <ion-icon class="icon" name="star-outline" color="dark"></ion-icon>
       </ion-tab-button>
   
-      <ion-tab-button tab="about" class="tab">
+      <ion-tab-button tab="about" class="tab" (click)="goToPage()">
         <ion-icon class="icon" name="person-outline" color="dark"></ion-icon>
       </ion-tab-button>
   

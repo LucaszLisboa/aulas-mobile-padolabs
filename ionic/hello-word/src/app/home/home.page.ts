@@ -1,17 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+import { CidadesService } from "../cidades.service";
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage  implements OnInit {
+  Cidades: object;
+  
+  constructor(
+    private router: Router,
+    private CidadesService: CidadesService,
+    ) {
+      this.Cidades = [];
+    }
 
-  constructor(private router: Router) {}
+  ngOnInit() {
+    this.CidadesService.BuscarCidades().subscribe(data => {
+      console.log(data);
+      this.Cidades = data;
+    })
+  }
 
-  goToPage(){
-    this.router.navigate(["/cidades"]);
+  goToPage(Cidade){
+    console.log(Cidade);
+    this.router.navigate(["/cidades"], {state: {data: Cidade}});
   }
 
 }
