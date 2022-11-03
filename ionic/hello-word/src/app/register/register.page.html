@@ -8,27 +8,27 @@
 
     <div class="register">
       <div class="input">
-        <ion-input placeholder="NOME COMPLETO"></ion-input>
+        <ion-input [(ngModel)]="userName" type="text" placeholder="Nome Completo"></ion-input>
       </div>
   
       <div class="input">
-        <ion-input placeholder="EMAIL"></ion-input>
+        <ion-input [(ngModel)]="userEmail" type="email" placeholder="Email"></ion-input>
       </div>
 
       <div class="input">
-        <ion-input placeholder="SENHA"></ion-input>
+        <ion-input [(ngModel)]="userPassword" type="password" placeholder="Password"></ion-input>
       </div>
 
       <div class="input">
-        <ion-input placeholder="UF"></ion-input>
+        <ion-input [(ngModel)]="userUf" type="text" placeholder="UF"></ion-input>
       </div>
 
       <div class="input">
-        <ion-input placeholder="CIDADE"></ion-input>
+        <ion-input [(ngModel)]="userCity" type="text" placeholder="Cidade"></ion-input>
       </div>
     </div>
 
-    <ion-button class="btn" expand="block">REGISTRAR</ion-button>
+    <ion-button (click)="onSubmit()" class="btn" expand="block">REGISTRAR</ion-button>
 
     <div class="btn-voltar">
       <ion-button class="btn" (click)="goToPage()" color="light" expand="block">VOLTAR</ion-button>

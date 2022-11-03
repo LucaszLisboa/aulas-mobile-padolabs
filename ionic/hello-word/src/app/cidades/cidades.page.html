@@ -8,22 +8,21 @@
       <ion-breadcrumbs color="dark">
         <ion-breadcrumb class="breadcrumb">Home</ion-breadcrumb>
         <ion-breadcrumb class="breadcrumb">Cidades</ion-breadcrumb>
-        <ion-breadcrumb class="breadcrumb">Lista</ion-breadcrumb>
-        <ion-breadcrumb class="breadcrumb">Londrina</ion-breadcrumb>
+        <ion-breadcrumb class="breadcrumb">{{Cidade.cityName}}</ion-breadcrumb>
       </ion-breadcrumbs>
     </div>
 
 
     <div class="cards">
       <ion-card class="card">
-        <img src="{{Cidade.imagem}}">
+        <img src="{{Cidade.cityImage}}">
         <ion-card-header>
           <ion-card-subtitle>Destino</ion-card-subtitle>
-          <ion-card-title>{{Cidade.Cidade}}, {{Cidade.UF}}</ion-card-title>
+          <ion-card-title>{{Cidade.cityName}}, {{Cidade.cityUf}}</ion-card-title>
         </ion-card-header>
       
         <ion-card-content class ="description">
-          <ion-text>{{Cidade.descricao}}</ion-text>
+          <ion-text>{{Cidade.cityDescription}}</ion-text>
         </ion-card-content>
       </ion-card>
     </div>
@@ -35,7 +34,7 @@
             <ion-label><b>População</b></ion-label>
           </ion-item>
           <div class="ion-padding" slot="content">
-            {{Cidade.populacao}}
+            {{Cidade.cityPopulation}}
           </div>
         </ion-accordion>
         <ion-accordion value="second">
@@ -43,7 +42,7 @@
             <ion-label><b>Area Total</b></ion-label>
           </ion-item>
           <div class="ion-padding" slot="content">
-            {{Cidade.area_total}}
+            {{Cidade.cityArea}}
           </div>
         </ion-accordion>
         <ion-accordion value="third">
@@ -51,7 +50,7 @@
             <ion-label><b>Prefeito</b></ion-label>
           </ion-item>
           <div class="ion-padding" slot="content">
-            {{Cidade.prefeito}}
+            {{Cidade.cityMayor}}
           </div>
         </ion-accordion>
         <ion-accordion value="fourth">
@@ -59,7 +58,7 @@
             <ion-label><b>Altitude</b></ion-label>
           </ion-item>
           <div class="ion-padding" slot="content">
-            {{Cidade.altitude}}
+            {{Cidade.cityAltitude}}
           </div>
         </ion-accordion>
       </div>

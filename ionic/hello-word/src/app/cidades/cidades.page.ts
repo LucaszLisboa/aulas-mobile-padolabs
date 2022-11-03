@@ -9,13 +9,18 @@ import { Router } from "@angular/router";
 export class CidadesPage implements OnInit {
   Cidade: object;
 
-  constructor() { 
+  constructor(private router: Router) { 
     this.Cidade = [];
+  }
+
+  goToPage() {
+    this.router.navigate(['/regiao']);
   }
 
   ngOnInit() {
     this.Cidade = history.state.dados;
     console.log(this.Cidade);
+
   }
 
 }
