@@ -7,26 +7,32 @@ import { CidadesService } from "../cidades.service";
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage  implements OnInit {
-  Cidades: object;
+export class HomePage implements OnInit {
+  cidades: object;
+  regiao: string;
   
   constructor(
     private router: Router,
     private CidadesService: CidadesService,
     ) {
-      this.Cidades = [];
+      this.cidades = [];
+      this.regiao = '';
     }
 
   ngOnInit() {
-    this.CidadesService.BuscarCidades().subscribe(data => {
-      console.log(data);
-      this.Cidades = data;
+    this.regiao = history.state.dados;
+
+    console.log(history.state);
+
+    this.CidadesService.BuscarCidades(this.regiao).subscribe(data => {
+      this.cidades = data;
+      console.log(this.cidades);
     })
   }
 
   goToPage(Cidade){
     console.log(Cidade);
-    this.router.navigate(["/cidades"], {state: {data: Cidade}});
+    this.router.navigate(["/cidades"], {state: {dados: Cidade}});
   }
 
 }

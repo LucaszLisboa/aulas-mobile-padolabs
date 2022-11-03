@@ -14,44 +14,19 @@
     </div>
 
     <div class="cards">
-      <ion-card class="card">
-        <img src="../../assets/londrina.png" alt="londrina">
+      <ion-card class="card" *ngFor="let cidade of cidades">
+        <img class="img" [src]="cidade.cityImage">
         <ion-card-header>
           <ion-card-subtitle>Destino</ion-card-subtitle>
-          <ion-card-title>Londrina, PR</ion-card-title>
+          <ion-card-title>{{cidade.cityName}}</ion-card-title>
         </ion-card-header>
       
         <ion-card-content class ="description">
-          Londrina é um município brasileiro localizado no estado do Paraná, na Região Sul do Brasil, distando 381 km da capital paranaense, Curitiba. É considerada pela CGU a Cidade mais transparente do Paraná.
+          <ion-text>{{cidade.cityShortDescription}}</ion-text>
         </ion-card-content>
-        <ion-button class="btn" (click)="goToPage()" expand="block">Visualizar Cidade</ion-button>
+        <ion-button class="btn" (click)="goToPage(cidades)" expand="block">Visualizar Cidade</ion-button>
       </ion-card>
-  
-      <ion-card class="card">
-        <img src="../../assets/curitiba.png" alt="curitiba">
-        <ion-card-header>
-          <ion-card-subtitle>Destino</ion-card-subtitle>
-          <ion-card-title>Curitiba, PR</ion-card-title>
-        </ion-card-header>
-      
-        <ion-card-content class ="description">
-          Curitiba é a capital do estado do Paraná, na região sul do Brasil. A Torre Panorâmica, que tem um observatório em sua parte superior, destaca-se na silhueta da Cidade.
-        </ion-card-content>
-        <ion-button class="btn" expand="block">Visualizar Cidade</ion-button>
-      </ion-card>
-  
-      <ion-card class="card">
-        <img src="../../assets/maringa.png" alt="maringa">
-        <ion-card-header>
-          <ion-card-subtitle>Destino</ion-card-subtitle>
-          <ion-card-title>Maringá, PR</ion-card-title>
-        </ion-card-header>
-      
-        <ion-card-content class ="description">
-          Maringá é um município brasileiro do estado do Paraná, sendo uma Cidade média-grande planejada e de urbanização recente.
-        </ion-card-content>
-        <ion-button class="btn" expand="block">Visualizar Cidade</ion-button>
-      </ion-card>
+
     </div>
   </div>
 

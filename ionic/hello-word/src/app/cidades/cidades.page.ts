@@ -7,14 +7,15 @@ import { Router } from "@angular/router";
   styleUrls: ['./cidades.page.scss'],
 })
 export class CidadesPage implements OnInit {
+  Cidade: object;
 
-  constructor(private router: Router) { }
-
-  goToPage(){
-    this.router.navigate(["/home"]);
+  constructor() { 
+    this.Cidade = [];
   }
 
   ngOnInit() {
+    this.Cidade = history.state.dados;
+    console.log(this.Cidade);
   }
 
 }

@@ -7,14 +7,10 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class CidadesService {
 
-  httpOptions = {
-    headers: new HttpHeaders({ 'x-bin-meta': 'false' })  
-  };
+  constructor(private http:HttpClient) { }
 
-  constructor(private http: HttpClient) { }
-
-  BuscarCidades(): Observable<object> {
-    const dataUrl = 'http://172.16.107.82:8080/regions/all';
-    return this.http.get(dataUrl, this.httpOptions);
+  BuscarCidades(regiao: any): Observable<object> {
+    const dataUrl = 'http://172.16.107.82:8080/regions/'+regiao;
+    return this.http.get(dataUrl);
   }
 }
