@@ -8,7 +8,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Weather from './screens/weather/Weather';
 import Statistic from './screens/statistic/Statistic';
 import News from './screens/news/News';
-import Localization from './screens/localization/Localization';
+import Located from './screens/localization/Localization';
 
 const Tab = createBottomTabNavigator();
 
@@ -21,28 +21,28 @@ export default function App() {
             let iconName;
 
             if (route.name === 'Home') {
-              iconName = focused
-                ? 'ios-cloudy-night'
-                : 'ios-cloudy-night-outline';
+              iconName = focused ? 'ios-cloudy-night' : 'ios-cloudy-night-outline';
             } else if (route.name === 'Statistic') {
               iconName = focused ? 'analytics' : 'analytics-outline';
-            } else if (route.name === 'Settings') {
+            } else if (route.name === 'News') {
               iconName = focused ? 'ios-newspaper' : 'ios-newspaper-outline';
-            } else if (route.name === 'Localization') {
-              iconName = focused ? 'ios-Localization' : 'ios-Localization-outline';
+            } else if (route.name === 'Located') {
+              iconName = focused ? 'ios-location' : 'ios-location';
             }
 
             // You can return any component that you like here!
           return <Ionicons name={iconName} size={size} color={color} />;
           },
-          tabBarActiveTintColor: 'tomato',
+          tabBarActiveTintColor: '#8DBBFF',
           tabBarInactiveTintColor: 'gray',
         })}
       >
         <Tab.Screen name="Home" component={Weather}/>
         <Tab.Screen name="Statistic" component={Statistic} />
-        <Tab.Screen name="Settings" component={News} />
-        <Tab.Screen name="Localization" component={Localization} />
+        <Tab.Screen name="News" component={News} />
+        <Tab.Screen name="Located" component={Located} />
+        
+        
       </Tab.Navigator>
     </NavigationContainer>
   );
